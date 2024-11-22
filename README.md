@@ -1,5 +1,13 @@
 # Gestor de Tareas
-Cómo Instalar y Ejecutar
+
+## 🚀 Funcionalidades
+
+- Registro y autenticación de usuarios.
+- CRUD de tareas.
+- Gestión de tareas por usuario.
+- Validación de datos y manejo de errores.
+
+## Cómo Instalar y Ejecutar
 Instalación
 
 ### Clonar el repositorio:
@@ -40,16 +48,20 @@ Endpoints Principales
 
     Eliminar tarea:
     DELETE /api/tareas/{id}
+    
+## 🛠 Tecnologías
 
-Tecnologías
+- **Java 17**
+- **Spring Boot 3**
+- **PostgreSQL**
+- **Spring Security**
+- **Lombok**
+- **BCrypt**
 
-* Java 17
-* Spring Boot 3
-* PostgreSQL
-* JWT para autenticación
 
-### Funcionalidades:
-Registro y autenticación de usuarios.
-Operaciones CRUD (Crear, Leer, Actualizar, Eliminar) para tareas.
-Filtrado de tareas por usuario.
+## 🔧 Requisitos
+
+- **JDK 17+**
+- **PostgreSQL 13+**
+- **Maven**
 
