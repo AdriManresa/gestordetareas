@@ -1,42 +1,55 @@
+# Gestor de Tareas
 Cómo Instalar y Ejecutar
+Instalación
 
-## Instalación
-1. Clonar el repositorio:
-   ```bash
-   git clone https://github.com/AdriManresa/gestordetareas)
-   cd gestor-tareas
+### Clonar el repositorio:
+```
+git clone https://github.com/AdriManresa/gestordetareas
+cd gestor-tareas
+```
+### Configurar la base de datos: Editar el archivo application.properties con los siguientes valores:
 
-    Configurar base de datos en application.properties:
+    spring.datasource.url=jdbc:postgresql://localhost:5432/tareas_db
+    spring.datasource.username=tu_usuario
+    spring.datasource.password=tu_contraseña
 
-spring.datasource.url=jdbc:postgresql://localhost:5432/tareas_db
-spring.datasource.username=tu_usuario
-spring.datasource.password=tu_contraseña
+### Construir el Proyecto
 
-## Construir el proyecto:
-```bash
+ Limpiar y construir:
+
+ ```
 mvn clean install
 ```
 Ejecutar la aplicación:
-```bash
-mvn spring-boot:run
-```
-Endpoints principales
 
-    Registro de usuario: POST /api/auth/registro
-    Crear tarea: POST /api/tareas
-    Listar tareas: GET /api/tareas/usuario/{usuarioId}
-    Actualizar tarea: PUT /api/tareas/{id}
-    Eliminar tarea: DELETE /api/tareas/{id}
+    mvn spring-boot:run
 
-## Tecnologías
+Endpoints Principales
 
-- Java 17
-- Spring Boot 3
-- PostgreSQL
-- JWT para autenticación
+    Registro de usuario:
+    POST /api/auth/registro
 
-## Funcionalidades
+    Crear tarea:
+    POST /api/tareas
 
-- Registro y autenticación de usuarios.
-- CRUD para tareas.
-- Filtrado de tareas por usuario.
+    Listar tareas:
+    GET /api/tareas/usuario/{usuarioId}
+
+    Actualizar tarea:
+    PUT /api/tareas/{id}
+
+    Eliminar tarea:
+    DELETE /api/tareas/{id}
+
+Tecnologías
+
+* Java 17
+* Spring Boot 3
+* PostgreSQL
+* JWT para autenticación
+
+### Funcionalidades:
+Registro y autenticación de usuarios.
+Operaciones CRUD (Crear, Leer, Actualizar, Eliminar) para tareas.
+Filtrado de tareas por usuario.
+
