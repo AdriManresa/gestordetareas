@@ -1,4 +1,4 @@
-Cómo Instalar y Ejecutar Instrucciones paso a paso para probar tu proyecto:
+Cómo Instalar y Ejecutar
 
 ## Instalación
 1. Clonar el repositorio:
